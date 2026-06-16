@@ -82,7 +82,7 @@
             this.linkLabel1.Size = new System.Drawing.Size(269, 12);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "github.com/wjbgis/Sedentary-reminder";
+            this.linkLabel1.Text = "github.com/wheelerwallis19-cyber/XiexieEyes";
             this.linkLabel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.linkLabel1_MouseClick);
             // 
             // AboutBox

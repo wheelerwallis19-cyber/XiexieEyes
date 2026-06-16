@@ -113,7 +113,7 @@ namespace Reminder
 
         private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/wjbgis/Sedentary-reminder");
+            System.Diagnostics.Process.Start("https://github.com/wheelerwallis19-cyber/XiexieEyes");
         }
     }
 }
