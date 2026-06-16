@@ -1,0 +1,41 @@
+# Build outputs
+obj/
+bin/
+*.exe
+*.pdb
+*.bak
+*.bak3
+*.build
+*.cache
+*.resources
+
+# IDE
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# NLP data (not project source)
+*.nlp
+mscorlib.dll
+
+# Local build scripts
+build_release.ps1
+
+# Localization
+zh-Hans/
+
+# Release build (explicitly tracked via release/)
+release/*.pdb
+release/build_release.ps1
+
+# Keep release binary
+!release/歇歇眼睛.exe
+# Release specifics
+release/*.pdb
+release/build_release.ps1
