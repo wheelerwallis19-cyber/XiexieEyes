@@ -94,7 +94,7 @@ namespace Reminder
             // 创建多屏子遮罩
 
             // 增量：启动视线追踪练习模块（30秒焦點球）
-            _eyeTracker = new EyeTracker(this);
+            _eyeTracker = new EyeTracker();
             _eyeTracker.Start();
             CreateMultiScreenCovers();
 
