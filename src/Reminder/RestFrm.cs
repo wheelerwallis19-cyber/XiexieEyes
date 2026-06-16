@@ -7,6 +7,8 @@ namespace Reminder
 {
     public partial class RestFrm : Form
     {
+        private EyeTracker _eyeTracker;
+
         private int rst_m;
         private int wrk_m;
         private int rst_m2;
@@ -90,6 +92,10 @@ namespace Reminder
             }
 
             // 创建多屏子遮罩
+
+            // 增量：启动视线追踪练习模块（30秒焦點球）
+            _eyeTracker = new EyeTracker(this);
+            _eyeTracker.Start();
             CreateMultiScreenCovers();
 
             // 倒计时显示
@@ -143,6 +149,7 @@ namespace Reminder
 
                     // 关闭所有子屏遮罩
                     CloseChildForms();
+            if (_eyeTracker != null) _eyeTracker.Stop();
 
                     if (rst_s == 0)
                     {
@@ -159,6 +166,7 @@ namespace Reminder
         private void RestFrm_FormClosing(object sender, FormClosingEventArgs e)
         {
             CloseChildForms();
+            if (_eyeTracker != null) _eyeTracker.Stop();
         }
 
         private void lblText_Click(object sender, EventArgs e) { }
